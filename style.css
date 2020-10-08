@@ -19,6 +19,10 @@ body{
 
 /*layout*/
 
+.wrapper{
+    display:grid;
+}
+
 header{
     display:grid;
     grid-template-rows: repeat(2, 1fr);
@@ -35,6 +39,10 @@ header nav{
 }
 
 /*nav details*/
+.header{
+    box-shadow: 0px 5px 5px rgb(41, 41, 41);
+    z-index: 999;
+}
 
 header nav{
     text-align: center;
@@ -64,17 +72,50 @@ header .button1{
     color: #ffffff;
     text-align: center;
 }
+header .button1:hover{
+    background-color: #ffffff;
+    border: 2px gray solid;
+    width: 100px;
+    height: 36px;
+    color: #222222;
+    text-align: center;
+}
 header li{
     list-style: none;
     display:inline;
-    padding-right: 13px;
+    padding-right: 50px;
 }
 header a{
     color: #eeeeee;
+    text-decoration: none;
+}
+header a:hover{
+    color: #34495E;
     text-decoration: none;
 }
 .lowerheader{
     background-color: #222222;
     color:#eeeeee;
     text-align: center;
+}
+
+/*Projects Layout*/
+.projects{
+    background-color: #e4e4e4;
+    color: #424242;
+    display:grid;
+    width:100%;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    text-align: center;
+}
+.projects h1, p{
+    margin-left: 20px;
+}
+.boxes ul{
+    display:grid;
+    grid-template-columns: repeat(3, auto);
+    list-style: none;
+    text-align: center;
+    min-height: 300px;
 }
