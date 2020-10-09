@@ -2,52 +2,40 @@
 <html>
     <head>
         <title>My Portfilio Page</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
     </head>
     <body>
-        <a name="top"></a>
-        <div class="wrapper">
-            <header class="header">
-                <nav>
-                    <ul>
-                        <li><a href="#top">home</a></li>
-                        <li><a href="#about">about</a></li>
-                        <li><a href="#projects">projects</a></li>
-                    </ul>
-                </nav>
-                <form>
-                    <input class="input" type="email" placeholder="Enter your email">
-                    <button class="button1" id="subscribe">Subscribe</button>
-                </form>
-                <div class="lowerheader">
-                    <h1>This is my work so far...</h1>
-                    <p>I have been working actively learning how to <code>$code</code></p>
-                </div>
-            </header>
-            <div class="projects">
-                <h1 id="about">Juan Santacruz</h1>
-                <p>Here in this website you will find the latest projects I have been working on</p>
-            </div>
-                <div class="boxes">
-                    <ul id="myprojects">
-                        <li>
-                            <h3>Project 1</h3>
-                        </li>
-                        <li>
-                            <h3>Project 2</h3>
-                        </li>
-                        <li>
-                            <h3>Project 3</h3>
-                        </li>
-                    </ul>
-                </div>
-            <div>
-                <h3>News</h3>
-                <p>Another Section in the web</p>
-            </div>
-            <footer>
-                <p>Copyrights 2020 &copy; Juan Santacruz</p>
+        <div class='page-wrapper'>
+           <nav class='navbar' id='navbar'>
+               <div class="logo"><h3>Santacruz</h3></div>
+               <div class="logo2"><h1>Portfolio</h1></div>
+               <ul class="menu">
+                   <li class="nav-list"><a href='#'>about</a></li>
+                   <li class="nav-list"><a href='#projects'>projects</a></li>
+                   <li class="nav-list"><a href='#contact'>contact</a></li>
+               </ul>
+           </nav>
+           <div id='welcome-section' class='welcome-section'>
+               <h1>My Name is <span class='important'>Santacruz</span></h1>
+               <p>I am becoming a web developer</p>
+           </div>
+           <section id='projects' class='mygrid'>
+               <div class='project-tile'><a href='#'><img src='1.jpg' alt='2'><h3>Project 1</h3></a></div>
+               <div class='project-tile'><a href='#'><img src='2.jpg' alt='2'><h3>Project 2</h3></a></div>
+               <div class='project-tile'><a href='#'><img src='3.jpg' alt='2'><h3>Project 3</h3></a></div>
+               <div class='project-tile'><a href='#'><img src='4.jpg' alt='2'><h3>Project 4</h3></a></div>
+               <div class='project-tile'><a href='#'><img src='5.jpg' alt='2'><h3>Project 5</h3></a></div>
+               <div class='project-tile'><a href='#'><img src='6.jpg' alt='2'><h3>Project 6</h3></a></div>
+           </section>
+           <section id='contact' class='contact'>
+               <h2>Juan Santacruz</h2>
+               <a href='https://github.com/juansfunes' id='profile-link' target="_blank" class='profile-link'><i class="material-icons">computer</i>GitHub</a>
+           </section>
+           <footer>
+               <p>Copyright 2020 Juan Santacruz &copy;</p>
             </footer>
-        </div>
+       </div>
     </body>
 </html>
